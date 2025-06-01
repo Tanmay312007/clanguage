@@ -1,19 +1,20 @@
+
 #include <stdio.h>
+
 int main()
 {
     int n;
-    printf("Enter A Length : ");
+    printf("Enter your Number = ");
     scanf("%d", &n);
-    int a=1;
+    int a = 1;
     for (int i = 1; i <= n; i++)
     {
-        for (int j = 1; j <= a; j++)
+        for (int j = 1; j <= i; j++)
         {
-            printf("* ");
+            printf("%d ", a);
+            a++;
         }
-        a++;
         printf("\n");
     }
-
     return 0;
 }
